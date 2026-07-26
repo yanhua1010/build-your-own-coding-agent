@@ -1,0 +1,34 @@
+# Build Your Own Coding Agent · 从零写出你自己的 coding agent
+
+对照三个工业级开源实现，把 coding agent 的内核一层层拆开，并动手写一个能跑的 mini-agent：
+
+- [pi](https://github.com/earendil-works/pi)（TypeScript / MIT / ~78k ⭐）— 主线教材
+- [codex](https://github.com/openai/codex)（Rust / Apache-2.0 / ~101k ⭐）— 架构对比
+- [grok-build](https://github.com/xai-org/grok-build)（Rust / Apache-2.0 / ~23k ⭐）— 架构对比
+
+**特点：全程使用国产模型 API（DeepSeek / GLM / Kimi），代码开箱即跑。**
+
+## 「Agent 内核拆解」系列文章
+
+| # | 主题 | 文章 | 对应代码 |
+|---|---|---|---|
+| 01 | Agent 的本质是一个 while 循环 | 即将发布 | `steps/01-minimal-loop/` |
+| 02 | 统一 LLM API 怎么设计 | 计划中 | `steps/02-provider-api/` |
+| 03 | Tool calling 全链路 | 计划中 | `steps/03-tools/` |
+| 04 | Context 管理与压缩 | 计划中 | `steps/04-context/` |
+| 05 | Codex 架构对比：Session/Task/Turn | 计划中 | — |
+| 06 | grok-build：工业级 TUI 的取舍 | 计划中 | — |
+
+## mini-agent 路线图
+
+每篇文章对应 `steps/` 下一个可独立运行的阶段，从 100 行的最小循环逐步长成带工具执行、上下文管理、TUI 的完整 coding agent。
+
+```bash
+# 环境要求：Node.js 20+，一个 DeepSeek 或 GLM 的 API Key
+export DEEPSEEK_API_KEY=sk-...
+cd steps/01-minimal-loop && npm install && npm start
+```
+
+## License
+
+本仓库代码采用 MIT License。引用的第三方项目源码片段遵循其原始协议（pi: MIT；codex / grok-build: Apache-2.0），版权归原作者所有。
