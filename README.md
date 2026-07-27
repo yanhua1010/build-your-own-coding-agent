@@ -10,14 +10,16 @@
 
 ## 「Agent 内核拆解」系列文章
 
-| # | 主题 | 文章 | 对应代码 |
-|---|---|---|---|
-| 01 | Agent 的本质是一个 while 循环 | 即将发布 | `steps/01-minimal-loop/` |
-| 02 | 统一 LLM API 怎么设计 | 计划中 | `steps/02-provider-api/` |
-| 03 | Tool calling 全链路 | 计划中 | `steps/03-tools/` |
-| 04 | Context 管理与压缩 | 计划中 | `steps/04-context/` |
-| 05 | Codex 架构对比：Session/Task/Turn | 计划中 | — |
-| 06 | grok-build：工业级 TUI 的取舍 | 计划中 | — |
+| # | 主题 | 状态 | 解析笔记 | 对应代码 |
+|---|---|---|---|---|
+| 01 | Agent 的本质是一个 while 循环 | ✍️ 本周发布 | [notes/01](notes/01-agent-loop-pi.md) | `steps/01-minimal-loop/` |
+| 02 | 统一 LLM API 怎么设计 | 计划中 | — | `steps/02-provider-api/` |
+| 03 | Tool calling 全链路 | 计划中 | — | `steps/03-tools/` |
+| 04 | Context 管理与压缩 | 计划中 | — | `steps/04-context/` |
+| 05 | Codex 架构对比：Session/Task/Turn | 计划中 | — | — |
+| 06 | grok-build：工业级 TUI 的取舍 | 计划中 | — | — |
+
+> 完整长文在公众号 / X 同步发布；本仓库放要点版解析（结构图 + 行号引用 + 设计点清单）与可运行代码。
 
 ## mini-agent 路线图
 
