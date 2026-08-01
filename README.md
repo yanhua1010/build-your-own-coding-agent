@@ -1,29 +1,29 @@
-# Build Your Own Coding Agent · 从零写出你自己的 coding agent
+# Build Your Own Coding Agent
 
-对照三个工业级开源实现，把 coding agent 的内核一层层拆开，并动手写一个能跑的 mini-agent：
+对照三个开源 coding agent 项目，把 agent 的内核一层层拆开，同时动手写一个能跑的 mini-agent：
 
-- [pi](https://github.com/earendil-works/pi)（TypeScript / MIT / ~78k ⭐）— 主线教材
-- [codex](https://github.com/openai/codex)（Rust / Apache-2.0 / ~101k ⭐）— 架构对比
-- [grok-build](https://github.com/xai-org/grok-build)（Rust / Apache-2.0 / ~23k ⭐）— 架构对比
+- [pi](https://github.com/earendil-works/pi)（TypeScript / MIT / ~78k star）作为主线教材
+- [codex](https://github.com/openai/codex)（Rust / Apache-2.0 / ~101k star）用于架构对比
+- [grok-build](https://github.com/xai-org/grok-build)（Rust / Apache-2.0 / ~23k star）用于架构对比
 
-**特点：全程使用国产模型 API（DeepSeek / GLM / Kimi），代码开箱即跑。**
+全程使用国产模型 API（DeepSeek / GLM / Kimi），代码可以直接在本地运行。
 
-## 「Agent 内核拆解」系列文章
+## 系列文章
 
 | # | 主题 | 状态 | 解析笔记 | 对应代码 |
 |---|---|---|---|---|
-| 01 | Agent 的本质是一个 while 循环 | ✍️ 本周发布 | [notes/01](notes/01-agent-loop-pi.md) | [steps/01](steps/01-minimal-loop/)（✅ 可运行） |
+| 01 | Agent 的本质是一个 while 循环 | 本周发布 | [notes/01](notes/01-agent-loop-pi.md) | [steps/01](steps/01-minimal-loop/)（可运行） |
 | 02 | 统一 LLM API 怎么设计 | 计划中 | — | `steps/02-provider-api/` |
 | 03 | Tool calling 全链路 | 计划中 | — | `steps/03-tools/` |
 | 04 | Context 管理与压缩 | 计划中 | — | `steps/04-context/` |
 | 05 | Codex 架构对比：Session/Task/Turn | 计划中 | — | — |
 | 06 | grok-build：工业级 TUI 的取舍 | 计划中 | — | — |
 
-> 完整长文在公众号 / X 同步发布；本仓库放要点版解析（结构图 + 行号引用 + 设计点清单）与可运行代码。
+完整长文在公众号和 X 同步发布，本仓库放要点版解析（结构图、行号引用、设计点清单）和可运行代码。
 
 ## mini-agent 路线图
 
-每篇文章对应 `steps/` 下一个可独立运行的阶段，从 100 行的最小循环逐步长成带工具执行、上下文管理、TUI 的完整 coding agent。
+每篇文章对应 `steps/` 下一个可以独立运行的阶段，从 100 行的最小循环开始，逐步加入工具执行、上下文管理、TUI 等能力。
 
 ```bash
 # 环境要求：Node.js 20+，一个 DeepSeek 或 GLM 的 API Key
