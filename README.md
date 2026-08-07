@@ -12,7 +12,7 @@
 
 | # | 主题 | 状态 | 解析笔记 | 对应代码 |
 |---|---|---|---|---|
-| 01 | Agent 的本质是一个 while 循环 | 本周发布 | [notes/01](notes/01-agent-loop-pi.md) | [steps/01](steps/01-minimal-loop/)（可运行） |
+| 01 | Agent 的本质是一个 while 循环 | 已发布 | [notes/01](notes/01-agent-loop-pi.md) | [steps/01](steps/01-minimal-loop/)（可运行） |
 | 02 | 统一 LLM API 与错误契约 | 本周发布 | [notes/02](notes/02-provider-api-pi.md) | [steps/02](steps/02-provider-api/)（可运行） |
 | 03 | 一次工具调用从头到尾经过什么 | 计划中 | — | `steps/03-tools/` |
 | 04 | Context 管理与压缩 | 计划中 | — | `steps/04-context/` |
