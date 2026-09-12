@@ -17,7 +17,7 @@
 | 03 | 一次工具调用从头到尾经过什么 | 已发布 | [notes/03](notes/03-tool-calling-pi.md) | [steps/03](steps/03-tools/)（可运行） |
 | 04 | 上下文压缩与会话持久化 | 已发布 | [notes/04](notes/04-context-compaction-pi.md) | [steps/04](steps/04-compaction/)（可运行） |
 | 05 | 权限与安全：四个 agent 的安全哲学 | 已发布 | [notes/05](notes/05-permission-security-pi.md) | [steps/05](steps/05-security/)（可运行） |
-| 06 | 从 100 行到工业级：一张评判清单 | 计划中 | — | — |
+| 06 | 系列收尾：pi 到底算不算工业级（X 长推） | 本周发布 | — | [完整 mini-agent](steps/) |
 
 完整长文在公众号和 X 同步发布，本仓库放要点版解析（结构图、行号引用、设计点清单）和可运行代码。
 
